@@ -1,4 +1,5 @@
-// Code Keypad Component Here
+import React from "react"
+
 function Keypad() {
 
     function handleChange() {
@@ -6,8 +7,9 @@ function Keypad() {
     }
 
     return(
-        <input type="password" onChange={handleChange}/>
+        <input type="password" onChange={handleChange} />
     )
+
 }
 
 export default Keypad

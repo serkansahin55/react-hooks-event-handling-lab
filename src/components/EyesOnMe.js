@@ -1,18 +1,20 @@
-// Code EyesOnMe Component Here
-function EyesOnMe() {
+import React from "react"
 
-    function handleFocus(){
+function EyesOnMe() {
+    
+    function focus() {
         console.log("Good!")
     }
 
-    function handleBlur(){
+    function blur() {
         console.log("Hey! Eyes on me!")
     }
+    
 
-    return (
+    return ( 
+        <button onFocus={focus} onBlur={blur}>Eyes on Me</button>
+    )
 
-        <button onFocus={handleFocus} onBlur={handleBlur}>Eyes on me</button>
-        )
 }
 
-export default EyesOnMe 
+export default EyesOnMe
